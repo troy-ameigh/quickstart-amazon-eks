@@ -184,12 +184,13 @@ tests:
       ALBIngressController: Disabled
       CalicoIntegration: Enabled
     regions:
-    - us-west-2
+    - us-east-1
   rafaysystems:
     parameters:
       AvailabilityZones: $[taskcat_genaz_3]
       NodeGroupType: 'Unmanaged'
       ALBIngressController: Disabled
+      ProvisionBastionHost: Disabled
       RafaySysIntegration: Enabled
       RafaySysFirstName: override
       RafaySysLastName: override
